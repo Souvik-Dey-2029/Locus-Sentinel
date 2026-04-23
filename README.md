@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Locus Sentinel
 
-## Getting Started
+**Natural Language Infrastructure Manager & AI Auditor**
 
-First, run the development server:
+Locus Sentinel is a high-tech "NOC" dashboard built for the Locus Paygentic Hackathon. it allows developers to deploy complex infrastructure (Next.js, Postgres, etc.) using simple natural language commands, while an AI "Sentinel" continuously audits the live deployment to ensure intent-alignment and financial safety.
 
+## 🚀 Core Mission
+- **Natural Language Ops**: Deploy apps via Locus API using chat-like commands.
+- **AI Sentinel Audit**: Automatically audits live URLs for performance, SSL, and content intent.
+- **Capital Guardian**: Built-in financial circuit breaker using Locus Wallet to prevent wasted spend on faulty deployments.
+- **Auto-Rollback**: If the Sentinel detects a failure (e.g., Database Connection Error), it triggers an immediate infrastructure rollback and refunds the escrow.
+
+## 🛠 Tech Stack
+- **Frontend**: Next.js 15, Tailwind CSS, Lucide Icons, Framer Motion.
+- **Backend**: Node.js (Express) Orchestrator.
+- **AI**: Gemini Pro (via `@google/genai`).
+- **Payments**: Locus Paygentic (Base Mainnet / USDC).
+- **Infrastructure**: BuildWithLocus (Agent-Native PaaS).
+
+## 📦 Getting Started
+
+### 1. Prerequisites
+- Node.js 18+
+- Locus API Key & Wallet Address
+- Gemini API Key
+
+### 2. Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repository
+git clone <your-repo-url>
+cd Locus
+
+# Install dependencies
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Environment Setup
+Create a `.env` file in the root directory:
+```env
+LOCUS_API_KEY=your_key_here
+LOCUS_WALLET_ADDRESS=your_wallet_address
+GEMINI_API_KEY=your_gemini_key
+MAX_TRANSACTION_THRESHOLD=50.00
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Run the Dashboard
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to access the NOC Dashboard.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛡 Features
+- **Escrow Lock**: Funds are held in virtual escrow during deployment.
+- **Transaction Manifest**: Detailed forensics on gas saved and settlement status.
+- **Live SSE Stream**: Real-time telemetry from the orchestrator.
+- **Safety Protocol**: Automated lockdown if wallet balance falls below $1.00.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built with ❤️ for the Locus Paygentic Hackathon.*
