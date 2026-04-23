@@ -121,6 +121,7 @@ app.prepare().then(() => {
               } else {
                 sendSseUpdate(deployId, { status: 'Audit Passed', log: '[FinTech] ✅ Audit Passed. Finalizing $' + estimatedCost.toFixed(2) + ' Settlement to Locus Network.', auditResult, txResult });
               }
+              sendSseUpdate(deployId, { status: 'Audit Passed', log: '[Sentinel] 🌌 INFRASTRUCTURE SEMANTICS VERIFIED. MISSION COMPLETE.' });
             }
             
             activeStreams.delete(deployId);

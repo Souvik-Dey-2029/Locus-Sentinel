@@ -4,6 +4,12 @@
 
 Locus Sentinel is a high-tech "NOC" dashboard built for the Locus Paygentic Hackathon. it allows developers to deploy complex infrastructure (Next.js, Postgres, etc.) using simple natural language commands, while an AI "Sentinel" continuously audits the live deployment to ensure intent-alignment and financial safety.
 
+## 💎 Why Locus Sentinel?
+- **Outcome-Based Finance**: The first protocol to link LLM-based semantic verification directly to Locus Paygentic financial settlement.
+- **The Circuit Breaker**: Implements a "Pre-flight Liquidity Check" to prevent orphaned deployments.
+- **Zero-Waste Infrastructure**: Automatically de-provisions faulty environments to ensure 0% capital bleed on broken builds.
+- **Forensic Transparency**: Provides a real-time "Transaction Manifest" for every AI-driven infrastructure change.
+
 ## 🚀 Core Mission
 - **Natural Language Ops**: Deploy apps via Locus API using chat-like commands.
 - **AI Sentinel Audit**: Automatically audits live URLs for performance, SSL, and content intent.
